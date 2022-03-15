@@ -3,10 +3,13 @@ package newTestForm.steps;
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.WebDriverRunner;
 import io.qameta.allure.Attachment;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.qameta.allure.Step;
 import newTestForm.components.Calendar;
 import newTestForm.components.StateAndCity;
 import newTestForm.pages.RegistrationPage;
+import org.junit.jupiter.api.DisplayName;
 
 import java.io.File;
 import java.nio.charset.StandardCharsets;
@@ -15,6 +18,8 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.open;
 
+@DisplayName("demoqa.com tests")
+@Severity(SeverityLevel.CRITICAL)
 public class RegistrationStep extends RegistrationPage {
 
     public Calendar calendar = new Calendar();
